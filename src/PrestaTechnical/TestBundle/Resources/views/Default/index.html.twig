@@ -1,0 +1,30 @@
+{% extends 'PrestaTechnicalTestBundle:Layouts:default.html.twig' %}
+
+{% block body %}
+<div class="container">
+	<table class="table table-hover">
+		<thead>
+		  <tr>
+		    <th>#</th>
+		    <th>LastName</th>
+		    <th>FirstName</th>
+		    <th>Badge Label</th>
+		    <th>Badge Level</th>
+		  </tr>
+		</thead>
+		<tbody>
+			{{ count }}
+			{% for dev in developers %}
+				<tr>
+				    <td>{{ dev.id }}</td>
+				    <td>{{ dev.lastname | upper}}</td>
+				    <td>{{ dev.firstname | title}}</td>
+				    <td>{{ dev.badgeLabel }}</td>
+				    <td>{{ dev.badgeLevel }}</td>
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+
+{% endblock %}

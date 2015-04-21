@@ -1,0 +1,7 @@
+presta_technical_test:
+    resource: "@PrestaTechnicalTestBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

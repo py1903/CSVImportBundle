@@ -1,0 +1,7 @@
+presta_technical_test_homepage:
+    path:     /
+    defaults: { _controller: PrestaTechnicalTestBundle:Default:index }
+
+presta_technical_test_export:
+    path:     /export
+    defaults: { _controller: PrestaTechnicalTestBundle:Default:generateCsv }
